@@ -7,6 +7,8 @@ import updatesRouter from "./routes/updates.js";
 import updatePointsRouter from "./routes/updatePoints.js";
 import usersRouter from "./routes/users.js";
 
+process.env.NODE_ENV = process.env.NODE_ENV || "development";
+
 if(process.env.NODE_ENV === 'development') process.loadEnvFile();
 
 const app = express();
